@@ -1,12 +1,14 @@
 <template>
-  <div class="Inventory column">
+  <div class="inventory column">
     
 
     <!-- <Pocket v-for="(item, index) in items.itemList" :key="index" :itemprop="item" :index="index"/> -->
-    <div v-for="(item, index) in items.playerinfo.slot" :key="index" class="Pocket">
+    <div v-for="(item, index) in items.playerinfo.slot" :key="index" :class="stickStyle(index)">
        
-      <Pocket :itemprop="getItem(index)"/>
-
+      <Pocket :itemprop="getItem(index)">
+        
+      </Pocket>
+      <div v-show="index<5" class="item-keybind">{{index+1}}</div>
     </div>
 
   </div>
@@ -37,8 +39,25 @@ export default {
       else{
         return this.items.itemList[index+1]
       }
-    }
+    },
+    stickStyle: function(index) {
+      if(index<5){
+        return {
+          pocket:true,
+          stick:true
+        }
+      }
+      else{
+        return {
+          pocket:true
+        }
+      }
+    },
+  },
+  computed:{
+    
   }
+
 }
 </script>
 
@@ -47,7 +66,7 @@ export default {
 td{
     background-color: blue;
 }
-.Inventory{
+.inventory{
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
@@ -60,7 +79,7 @@ td{
     min-width: 100.5%;
     grid-auto-rows: min-content;
 }
-.Pocket{
+.pocket{
     float: left;
     background-color: rgba(50, 50, 50, 0.24);
     position: relative;
@@ -72,14 +91,14 @@ td{
     transition: filter ease-in 0.15s, -webkit-filter ease-in 0.15s;
     overflow: hidden;
 }
-.Pocket:hover {
+.pocket:hover {
     -webkit-filter: brightness(0.6);
     filter: brightness(0.6);
 }
 .hasItem{
     padding-top:10px;
 }
-.Item{
+.item{
   width: 100%;
   min-width: 100%;
   padding-bottom: 100%;
@@ -87,6 +106,27 @@ td{
   background-repeat: no-repeat;
   background-position: center center;
 }
-
+.stick{
+  position: sticky;
+  top: 0px;
+  z-index: 20000;
+  background-color: rgb(75, 75, 75);
+}
+.item-keybind{
+  position: absolute;
+    text-align: center;
+    font-size: 15px;
+    line-height: 0px;
+    color: #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    top: 0;
+    z-index: 999;
+    background: #2c2c2c;
+    padding: 10px;
+    border-right: 1px solid #666;
+    border-bottom: 1px solid #666;
+}
 
 </style>
