@@ -1,11 +1,6 @@
 <template>
-  <div class="Item" :style=styles>
-    
-      
-
+  <div class="item" :style=styles v-on:click.ctrl="getData()" v-on:click.shift="getData()">
   </div>
-  
-    
 </template>
 
 <script>
@@ -31,7 +26,15 @@ export default {
             }
             return{}
         }
-    }
+    },
+  methods:{
+    getData: function() {
+      if(this.itemprop != null)
+      {
+        console.log(this.itemprop.data);
+      }
+    },
+  }
 }
 
 
@@ -43,7 +46,7 @@ img{
     max-width:100%;
     max-height:100%;
 }
-.Item{
+.item{
   width: 100%;
   min-width: 100%;
   padding-bottom: 100%;
@@ -51,5 +54,6 @@ img{
   background-repeat: no-repeat;
   background-position: center center;
 }
+
 
 </style>

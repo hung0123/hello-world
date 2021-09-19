@@ -1,5 +1,5 @@
 <template>
-  <div class="Control">
+  <div class="control">
     <p>給</p>
     <p>放下</p>
   </div>
