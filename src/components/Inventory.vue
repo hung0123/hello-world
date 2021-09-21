@@ -5,7 +5,7 @@
     <!-- <Pocket v-for="(item, index) in items.itemList" :key="index" :itemprop="item" :index="index"/> -->
     <div v-for="(item, index) in items.playerinfo.slot" :key="index" :class="stickStyle(index)">
        
-      <Pocket :itemprop="getItem(index)">
+      <Pocket :itemprop="getItem(index)" :index=index>
         
       </Pocket>
       <div v-show="index<5" class="item-keybind">{{index+1}}</div>
