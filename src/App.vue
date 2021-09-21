@@ -214,8 +214,193 @@ export default {
             }
       },
       itemGround:{
-          "slot":5,"invTier":"drop","itemList":{"1":{"name":"bread","hash":1520635147,"content":"<div class= \"context-tittle\">麵包</div><div class=\"line\"></div><div class=\"context-type\">* <span class=\"float-right\">需冷藏</span></div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">食物</span></div><div class=\"context-type\">單位 : <span class=\"float-right\">尚未開封</span></div><div class = \"opts\">保存期限 : <span class=\"float-right\"><span style=\"color:yellow\">已過期</span></span></div><div class=\"line\"></div><div class= \"context-desc\">這是塊美味可口的小麵包<br>傳說中吃了的人會變幸運兒</div>","data":{"cansplit":true,"mfd":1631252236,"lasttick":1631768561,"qty":1,"canuse":true,"isfood":true,"duration":86400,"candelete":true},"action":"setSecondInventoryItems","maxweight":20,"invOwner":"x210y-909z31","weight":0}
-      }
+            "invTier":"player",
+            "itemList":{
+            "1":{
+            "name":"bread",
+            "hash":1520635147,
+            "content":"<div class= \"context-tittle\">麵包</div><div class=\"line\"></div><div class=\"context-type\">* <span class=\"float-right\">需冷藏</span></div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">食物</span></div><div class=\"context-type\">單位 : <span class=\"float-right\">尚未開封</span></div><div class = \"opts\">保存期限 : <span class=\"float-right\"><span style=\"color:yellow\">已過期</span></span></div><div class=\"line\"></div><div class= \"context-desc\">這是塊美味可口的小麵包<br>傳說中吃了的人會變幸運兒</div>",
+            "data":{
+            "cansplit":true,
+            "mfd":1631252236,
+            "lasttick":1631768561,
+            "qty":1,
+            "canuse":true,
+            "isfood":true,
+            "duration":86400,
+            "candelete":true
+            }
+            },
+            "2":{
+            "name":"bread",
+            "hash":1845990004,
+            "content":"<div class= \"context-tittle\">麵包</div><div class=\"line\"></div><div class=\"context-type\">* <span class=\"float-right\">需冷藏</span></div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">食物</span></div><div class=\"context-type\">單位 : <span class=\"float-right\">尚未開封</span></div><div class = \"opts\">保存期限 : <span class=\"float-right\"><span style=\"color:yellow\">已過期</span></span></div><div class=\"line\"></div><div class= \"context-desc\">這是塊美味可口的小麵包<br>傳說中吃了的人會變幸運兒</div>",
+            "data":{
+            "cansplit":true,
+            "mfd":1631252237,
+            "lasttick":1631768561,
+            "qty":1,
+            "canuse":true,
+            "isfood":true,
+            "duration":86400,
+            "candelete":true
+            }
+            },
+            "3":{
+            },
+            "4":{
+            },
+            "5":{
+            "name":"bread",
+            "hash":1845990004,
+            "content":"<div class= \"context-tittle\">麵包</div><div class=\"line\"></div><div class=\"context-type\">* <span class=\"float-right\">需冷藏</span></div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">食物</span></div><div class=\"context-type\">單位 : <span class=\"float-right\">尚未開封</span></div><div class = \"opts\">保存期限 : <span class=\"float-right\"><span style=\"color:yellow\">已過期</span></span></div><div class=\"line\"></div><div class= \"context-desc\">這是塊美味可口的小麵包<br>傳說中吃了的人會變幸運兒</div>",
+            "data":{
+            "cansplit":true,
+            "mfd":1631252237,
+            "lasttick":1631768561,
+            "qty":1,
+            "canuse":true,
+            "isfood":true,
+            "duration":86400,
+            "candelete":true
+            }
+            },
+            "6":{
+            "name":"vehicle_key",
+            "hash":-1739315070,
+            "content":"<div class= \"context-tittle\">車鑰匙</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">功能道具</span></div><div class=\"context-type\">車牌 : <span class=\"float-right\">UNWETQMY</span></div><div class=\"line\"></div><div class= \"context-desc\">可用於遠程遙控的鑰匙</div>",
+            "data":{
+            "canuse":true,
+            "candelete":true,
+            "plate":"UNWETQMY",
+            "istool":true
+            }
+            },
+            "7":{
+            "name":"money_coin",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">銅板</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 枚 (1元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的銅板</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "8":{
+            },
+            "9":{
+            },
+            "10":{
+            "name":"money_coin",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">銅板</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 枚 (1元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的銅板</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "12":{
+            "name":"money_coin",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">銅板</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 枚 (1元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的銅板</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "13":{
+            "name":"money_coin",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">銅板</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 枚 (1元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的銅板</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "14":{
+            "name":"money_coin",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">銅板</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 枚 (1元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的銅板</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "15":{
+            "name":"money_paper",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">紙鈔</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 張 (100元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的紙鈔</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "16":{
+            "name":"money_paper",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">紙鈔</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 張 (100元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的紙鈔</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "17":{
+            "name":"money_paper",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">紙鈔</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 張 (100元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的紙鈔</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "18":{
+            "name":"money_paper",
+            "hash":-1131246330,
+            "content":"<div class= \"context-tittle\">紙鈔</div><div class=\"line\"></div><div class=\"context-type\">類型 : <span class=\"float-right\">貨幣</span></div><div class=\"context-type\">數量 : <span class=\"float-right\">1 張 (100元)</span></div><div class=\"line\"></div><div class= \"context-desc\">平凡無奇的紙鈔</div>",
+            "data":{
+            "candelete":true,
+            "cansplit":true,
+            "qty":1,
+            "canMerge":true,
+            "iscurrency":true
+            }
+            },
+            "27":{
+            },
+            "40":{
+            }
+            },
+            "action":"setItems",
+            "invOwner":"steam:11000010ccac5d9",
+            "playerinfo":{
+            "slot":40,
+            "cash":406,
+            "weight":4.94999999999999,
+            "maxWeight":24
+            }
       }
       
     }
